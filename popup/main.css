@@ -1,69 +1,75 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Brush Script MT", cursive;
-
-  width: 600px;
-  height: 400px;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 400px;
 }
 
 body {
-  background: linear-gradient(45deg, #a5a299 10%, #8d818c 100%);
-  box-sizing: border-box;
+	background: linear-gradient(45deg, #a5a299 10%, #8d818c 100%);
+	box-sizing: border-box;
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  align-items: stretch;
-  justify-content: stretch;
+	align-items: stretch;
+	justify-content: stretch;
 }
 
-.token-header {
-  padding: 0 12px;
+.header {
+	font-family: "Brush Script MT", cursive;
+	padding: 0 12px;
+	margin-bottom: 2px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+	margin: 12px;
+	box-sizing: border-box;
+	color: #fefffe;
+	display: flex;
+	flex-direction: column;
+}
 
-  margin: 12px;
-  box-sizing: border-box;
-  color: #fefffe;
+.show-password-container {
+	margin: 4px 0 0 4px;
+	box-sizing: border-box;
+	color: #fefffe;
+	display: flex;
+	flex-direction: row;
+
+	.password-checkbox-hint {
+		margin-left: 4px;
+	}
 }
 
 .wide {
-  flex: 0 1;
+	flex: 0 1;
 }
 
 .full-size {
-  flex: 1 1;
+	flex: 1 1;
 }
 
 .token-input {
-  outline: none;
-  box-sizing: border-box;
+	outline: none;
+	box-sizing: border-box;
 
-  color: #fefffe;
-
-  margin-top: 2px;
-  width: 100%;
+	color: #fefffe;
 }
 
 .analyze-body {
-  flex: 1 1;
-
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: break-word;
+	white-space: normal;
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 .text-field {
-  font-family: Arial, sans-serif;
-  padding: 12px;
+	flex: 1 1;
+	font-family: Arial, sans-serif;
+	padding: 12px;
 
-  border: 2px solid #fefffe;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
+	border: 2px solid #fefffe;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
 }

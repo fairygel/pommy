@@ -1,10 +1,13 @@
 const response = document.querySelector("#response");
 const tokenInput = document.querySelector("#token");
+const showPasswordCheckbox = document.querySelector("#show-password");
 
-function random(number) {
-  return Math.floor(Math.random() * number);
-}
+showPasswordCheckbox.addEventListener("change", () => {
+    tokenInput.type = showPasswordCheckbox.checked ? "text" : "password";
+});
 
 tokenInput.addEventListener("input", () => {
-    response.textContent = tokenInput.value + random(1000);
+    localStorage.setItem("token", tokenInput.value);
 });
+
+if (localStorage.getItem("token")) tokenInput.value = localStorage.getItem("token");
