@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Artboard1" transform="matrix(2,0,0,2,0,0)">
+        <rect x="0" y="0" width="48" height="48" style="fill:none;"/>
+        <circle cx="24" cy="24" r="24" style="fill:rgb(254,255,254);"/>
+        <defs>
+            <mask id="Mask">
+            
+                <g transform="matrix(0.5,-0,-0,0.5,0,0)"><image id="_Image2" width="96px" height="96px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVRoge2VzyuDcRzHP4/5kSzUGpuGCwc3JYUc9h9wRQ4U5dfBjxJSygEXaTvKVSkXNweXFYdFUUhtWZYRLU2TrNb2cbDv8+yZzZ7HPk9Rn9fp+/18n17v7/fw+TwADPPnkfKcW53OlkgweBe4ThqQXrFyiYLbKTO5v8OP6UQ2HKR6aTGBGcRnKAMmMvWIiPN0fmc8WwBOU/mt4ax+xDGigLkcfow36ROZctRHW+VlaPfkobFU7IpiR7+58DcOxY0/RiQAsKzJT3gqIQlwCV9/qrAsJ/SQBFhuvmyroiB5RcAeSQA4LhAx2qcUxkWAV5enONdBqK3b9u4NKwW/WERpAiDhUe9rxeJVV0CR1g9Ns2IVMSTA7JYb41lXgEZ675Ve7qTXNx+kzYrzfD9B3dS4VYN1kFhfthRVDbt94gdUetTD1FdF67ecqv3Hdlp/9ZXav0UzSRVcKv2Zk1gP9liaPjigues1s6no3xbKyfUgvQh9cttGrwdokO8/aYQeoE5uLmP8IAVSAV0GBcBQqrvIx5tAWkdEDNUX5Pj5uH3Y7Nt5LCSAYRiGYRiGYRiGYRiGYRjmn/EJuNyqXP04KGMAAAAASUVORK5CYII="/>
+                </g>
+            </mask>
+        </defs>
+        <g mask="url(#Mask)">
+            <circle cx="24" cy="24" r="24" style="fill:url(#_Linear1);"/>
+        </g>
+        <defs>
+            <mask id="Mask1">
+            
+                <g transform="matrix(0.5,-0,-0,0.5,0,0)"><image id="_Image4" width="96px" height="96px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABo0lEQVRoge2WP0gCcRTHX+ffSIIGg0grsKU/WxBCSzRWQ0NNTq0ZGC3Z1hotbTZUJDSElFA2OTYUQUNDQ6CUqBAuBvYHUvS1/M67vB8S+g6C3md697u7z5e7+/HeATAMwzAMwzDM38BCp7L7LJ/G1Q4iu3/JP+GAUjp9d1AkUuoZOcc6xTU7tV7ZqaKe1ALVexFsYCMxG6XfXTIE4Anh5oGg0Y94qIizStN7f8WXbHF5l+479FZkj4ArZAFwJJTZaCShheWsZAGuOCJiIWgDAN9FPWGeLABgcDM8JXam9VINSBAG6Ol6FQFVLwDJLmrg40wUyqw5AXCjFt0mBTjVomJSwKRalM0JGA+olSlP4Apc1/tcHoBuoiluj8c7NDo2oC3lh6VdqiX7zPGbsRmtkulDz7Jm99JJ5HfGpM0UQ0T+niu5/5RopilJuT9ONZUXpfr3MNkwiEr0hb1+7YJ2k/p+HJVz2exj8r6mW2o34EktcvupTKZQa3ZtS0yL17LtIFcLIoiIuEX8s6jDuv5QvZ0zTQ8ApswUhmEYhmEYhmGYf8k3nJF2FcrLZJYAAAAASUVORK5CYII="/>
+                </g>
+            </mask>
+        </defs>
+        <g mask="url(#Mask1)">
+            <circle cx="24" cy="24" r="24" style="fill:url(#_Linear3);"/>
+        </g>
+        <defs>
+            <mask id="Mask2">
+            
+                <g transform="matrix(0.5,-0,-0,0.5,0,0)"><image id="_Image6" width="96px" height="96px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHklEQVRoge3TvWoCQRQF4KuJQQMxCdYWgqRKbUxrkyIIlhEsLHwG38FGKwvtUgj2tulSxCKdYiWkyA9BCIJBBIMeix1F2Z1iszPd+Zq7zMI5zO6MCBERERERERERERER0aEj7ZtILo2pxeb8O7Bqx6zlZxYAgKa1gg4cSVsFX6ogHzQorFmPqJmyVTBT88xWwa+a8aAFx5r17Q4unBF7KMqgNgnatqenfnJfRCRc+gSA2bXBgroqwLmEsi/qeai/974VtgVoj3aPuDJXcLmGhztzBfLqkb9K+M/RHVPpeKx1f/wXaJ1+uDbwFDWYL3K7PIz/Lmt3+0+V/fhlLfCddqvuTtK0lTYfLyI3jefx/O/t8f7ESrwjZPrLExG5bQDqp8eLpNpnIgAAAABJRU5ErkJggg=="/>
+                </g>
+            </mask>
+        </defs>
+        <g mask="url(#Mask2)">
+            <circle cx="24" cy="24" r="24" style="fill:url(#_Linear5);"/>
+        </g>
+        <defs>
+            <mask id="Mask3">
+            
+                <g transform="matrix(0.5,-0,-0,0.5,0,0)"><image id="_Image8" width="96px" height="96px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAyUlEQVRoge3SoQoCQRSF4euCsAZNKwaxCUZfQMEkWDcLNqOwb6DvYrbY7CaDYBZExWBU1uq1rDqblpWZ5P+1CzPnzAwjAgAAAAAAAABALoVfNvn9ZnBfbdX2YRLe+KyqqofQUf5c32Y/3T/LVL8iB/mtp1FwCzLXe3kLQvNZKhP7BYPU1LFfUE1NdfsF19Tk2y/Yp6ZN3u3Zumoa2S+QpZF/LDsoaJw++XHbQb5IbZ3kX3pO8kWKw8VD411UcpQvIuJl/08AAPBfXor1Zki6st+iAAAAAElFTkSuQmCC"/>
+                </g>
+            </mask>
+        </defs>
+        <g mask="url(#Mask3)">
+            <circle cx="24" cy="24" r="24" style="fill:url(#_Linear7);"/>
+        </g>
+        <defs>
+            <mask id="Mask4">
+            
+                <g transform="matrix(0.5,-0,-0,0.5,0,0)"><image id="_Image10" width="96px" height="96px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVRoge3UIQoCQRjF8VHLotmwzSSbbCJi3hOoyeABrHoEr+MJDAZBsIlsE1EU7NvcVT6DLO6AijAzyf+vPQbemzCMUgAAAAAAAD8rfT4qVu83d8PeJEokWYzLjvo7B3naBk76g1gyccNBvxfJy7pof6AneQOjrrfXC7XUtz/Q1FLd/kCqJd/+wE5LR/sDKy3NjQbeqpzyr6hlf0B1c/1TB/1KjdKsf/blOzTR3oiIyHlo2l/4eFIL/ct+eTXsBwAAAAD8kwezjGmrOiyv1wAAAABJRU5ErkJggg=="/>
+                </g>
+            </mask>
+        </defs>
+        <g mask="url(#Mask4)">
+            <circle cx="24" cy="24" r="24" style="fill:url(#_Linear9);"/>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.475086,-36,36,-14.475086,70,80)"><stop offset="0" style="stop-color:rgb(141,129,140);stop-opacity:1"/><stop offset="0.47" style="stop-color:rgb(152,144,156);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(180,184,197);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.475086,-36,36,-14.475086,70,80)"><stop offset="0" style="stop-color:rgb(141,129,140);stop-opacity:1"/><stop offset="0.47" style="stop-color:rgb(152,144,156);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(180,184,197);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.475086,-36,36,-14.475086,70,80)"><stop offset="0" style="stop-color:rgb(141,129,140);stop-opacity:1"/><stop offset="0.47" style="stop-color:rgb(152,144,156);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(180,184,197);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear7" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.475086,-36,36,-14.475086,70,80)"><stop offset="0" style="stop-color:rgb(141,129,140);stop-opacity:1"/><stop offset="0.47" style="stop-color:rgb(152,144,156);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(180,184,197);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear9" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.475086,-36,36,-14.475086,70,80)"><stop offset="0" style="stop-color:rgb(141,129,140);stop-opacity:1"/><stop offset="0.47" style="stop-color:rgb(152,144,156);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(180,184,197);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

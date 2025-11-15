@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 400px;
+    height: 400px;
+}
+
+body {
+    background: linear-gradient(45deg, #A5A299 10%, #8D818C 100%);
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.analyze-body {
+    box-sizing: border-box;
+    margin: 12px;
+    padding: 12px;
+    border: 2px solid #FEFFFE;
+    color: #FEFFFE;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    flex: 1;
+}

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "pommy",
+  "version": "0.1",
+  "description": "Summarize the webpage just in one click.",
+  "icons": {
+    "48": "icons/ico.svg",
+    "96": "icons/ico.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ],
+
+  "action": {
+    "default_icon": "icons/ico.svg",
+    "default_title": "pommy",
+    "default_popup": "popup/index.html"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "frgel@proton.me"
+    }
+  }
+}
