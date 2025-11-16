@@ -1,26 +1,75 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    width: 400px;
-    height: 400px;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 400px;
 }
 
 body {
-    background: linear-gradient(45deg, #A5A299 10%, #8D818C 100%);
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch;
-    justify-content: stretch;
+	background: linear-gradient(45deg, #a5a299 10%, #8d818c 100%);
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: stretch;
+	justify-content: stretch;
+}
+
+.header {
+	font-family: "Brush Script MT", cursive;
+	padding: 0 12px;
+	margin-bottom: 2px;
+}
+
+.container {
+	margin: 12px;
+	box-sizing: border-box;
+	color: #fefffe;
+	display: flex;
+	flex-direction: column;
+}
+
+.show-password-container {
+	margin: 4px 0 0 4px;
+	box-sizing: border-box;
+	color: #fefffe;
+	display: flex;
+	flex-direction: row;
+
+	.password-checkbox-hint {
+		margin-left: 4px;
+	}
+}
+
+.wide {
+	flex: 0 1;
+}
+
+.full-size {
+	flex: 1 1;
+}
+
+.token-input {
+	outline: none;
+	box-sizing: border-box;
+
+	color: #fefffe;
 }
 
 .analyze-body {
-    box-sizing: border-box;
-    margin: 12px;
-    padding: 12px;
-    border: 2px solid #FEFFFE;
-    color: #FEFFFE;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    flex: 1;
+	white-space: normal;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.text-field {
+	flex: 1 1;
+	font-family: Arial, sans-serif;
+	padding: 12px;
+
+	border: 2px solid #fefffe;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
 }

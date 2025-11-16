@@ -6,7 +6,20 @@
   </head>
 
   <body>
-    <div class="analyze-body" id="response"></div>
+    <div class="container wide">
+        <label for="token" class="header">Token</label>
+        <input class="text-field token-input" type="password" id="token">
+        <div class="show-password-container">
+            <input class="show-password-checkbox" 
+                   type="checkbox" 
+                   id="show-password">
+            <span class="password-checkbox-hint">Show Token?</span>
+        </div>
+    </div>
+    <div class="container full-size">
+        <div class="header">Analyze</div>
+        <div class="text-field analyze-body" id="response"></div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
