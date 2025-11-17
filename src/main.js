@@ -1,32 +1,38 @@
 import { AnalyzerService } from "./service/analyzer_service.js";
 import { ApiKeyStorage } from "./storage/apikey_storage.js";
+import { PromptStorage } from "./storage/prompt_storage.js";
 
 const responseElement = document.querySelector("#response");
 const tokenInput = document.querySelector("#token");
+const promptInput = document.querySelector("#prompt");
 const showPasswordCheckbox = document.querySelector("#show-password");
 const settingsButton = document.querySelector("#settings-button");
-const modal = document.querySelector("#settings-menu");
-const modalCloseButton = document.querySelector("#settings-close-button");
+const settingsMenu = document.querySelector("#settings-menu");
+const settingsCloseButton = document.querySelector("#settings-close-button");
 
 const analyzerService = new AnalyzerService();
 const apiKeyStorage = new ApiKeyStorage();
+const promptStorage = new PromptStorage();
 
-const MODAL_VISIBLE_CLASS = "show";
+const SETTINGS_VISIBLE_CLASS = "show";
+
 let tokenDirty = false;
+let promptDirty = false;
 
-function openModal() {
-	if (!modal) return;
-	modal.classList.add(MODAL_VISIBLE_CLASS);
-	modal.setAttribute("aria-hidden", "false");
+function openSettings() {
+	if (!settingsMenu) return;
+	settingsMenu.classList.add(SETTINGS_VISIBLE_CLASS);
+	settingsMenu.setAttribute("aria-hidden", "false");
 	hydrateTokenField();
 }
 
-function closeModal() {
-	if (!modal) return;
-	modal.classList.remove(MODAL_VISIBLE_CLASS);
-	modal.setAttribute("aria-hidden", "true");
-	if (tokenDirty) {
+function closeSettings() {
+	if (!settingsMenu) return;
+	settingsMenu.classList.remove(SETTINGS_VISIBLE_CLASS);
+	settingsMenu.setAttribute("aria-hidden", "true");
+	if (tokenDirty || promptDirty) {
 		tokenDirty = false;
+		promptDirty = false;
 		renderSummary();
 	}
 }
@@ -36,6 +42,11 @@ function hydrateTokenField() {
 	const storedToken = apiKeyStorage.getApiKey("GEMINI") || "";
 	tokenInput.value = storedToken;
 	tokenDirty = false;
+
+	if (!promptInput) return;
+	const storedPrompt = promptStorage.getPrompt() || "";
+	promptInput.value = storedPrompt;
+	promptDirty = false;
 }
 
 if (showPasswordCheckbox && tokenInput) {
@@ -52,27 +63,21 @@ if (tokenInput) {
 	});
 }
 
-if (settingsButton) {
-	settingsButton.addEventListener("click", () => openModal());
-}
-
-if (modalCloseButton) {
-	modalCloseButton.addEventListener("click", () => closeModal());
-}
-
-if (modal) {
-	modal.addEventListener("click", (event) => {
-		if (event.target === modal) {
-			closeModal();
-		}
+if (promptInput) {
+  promptInput.addEventListener("input", () => {
+		const trimmed = promptInput.value.trim();
+		promptStorage.setPrompt(trimmed);
+		promptDirty = true;
 	});
 }
 
-document.addEventListener("keydown", (event) => {
-	if (event.key === "Escape") {
-		closeModal();
-	}
-});
+if (settingsButton) {
+	settingsButton.addEventListener("click", () => openSettings());
+}
+
+if (settingsCloseButton) {
+	settingsCloseButton.addEventListener("click", () => closeSettings());
+}
 
 async function renderSummary() {
 	responseElement.textContent = "Generating Summary...";
@@ -94,6 +99,6 @@ async function renderSummary() {
 // onInit
 document.addEventListener("DOMContentLoaded", () => {
 	hydrateTokenField();
-	closeModal();
+	closeSettings();
 	renderSummary();
 });

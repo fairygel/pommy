@@ -73,6 +73,10 @@ body {
 	color: #fefffe;
 }
 
+.add-margin {
+	margin-top: 12px;
+}
+
 .analyze-body {
 	white-space: normal;
 	overflow-wrap: break-word;

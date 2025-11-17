@@ -1,8 +1,10 @@
 import { GeminiCallout } from "../callout/gemini_callout.js";
 import { RequestDTO } from "../dto/request_dto.js";
 import { ApiKeyStorage } from "../storage/apikey_storage.js";
+import { PromptStorage } from "../storage/prompt_storage.js";
 
 const apiKeyStorage = new ApiKeyStorage();
+const promptStorage = new PromptStorage();
 
 // TODO make customizable
 const prompt = 'Analyze the following webpage content and provide a summary of its main points. Summary should use content\'s language.';
@@ -11,8 +13,9 @@ export class AnalyzerService {
     async analyzePage() {
         const pageContent = await getActiveTabContent();
         const apiKey = apiKeyStorage.getApiKey('GEMINI');
+        const customPrompt = promptStorage.getPrompt();
 
-        const requestDTO = new RequestDTO(apiKey, pageContent, prompt);
+        const requestDTO = new RequestDTO(apiKey, pageContent, customPrompt || prompt);
         const geminiCallout = new GeminiCallout();
         const result = await geminiCallout.makeRequest(requestDTO);
 
