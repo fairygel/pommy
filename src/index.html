@@ -1,25 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
 
-  <body>
-    <div class="container wide">
-        <label for="token" class="header">Token</label>
-        <input class="text-field token-input" type="password" id="token">
-        <div class="show-password-container">
-            <input class="show-password-checkbox" 
-                   type="checkbox" 
-                   id="show-password">
-            <span class="password-checkbox-hint">Show Token?</span>
-        </div>
-    </div>
-    <div class="container full-size">
-        <div class="header">Analyze</div>
-        <div class="text-field analyze-body" id="response"></div>
-    </div>
-    <script type="module" src="main.js"></script>
-  </body>
+	<body>
+		<!-- MAIN WINDOW -->
+		<div class="container inline">
+			<div class="header">Pommy</div>
+			<div class="settings">
+				<button
+					class="settings-button"
+					id="settings-button"
+					aria-label="Open settings"
+				>
+					<img
+						width="28px"
+						height="28px"
+						class="settings-icon"
+						src="../icons/settings.svg"
+						alt="Settings"
+					/>
+				</button>
+			</div>
+		</div>
+		<div class="container full-size">
+			<div class="header">Analyze</div>
+			<div class="text-field analyze-body" id="response"></div>
+		</div>
+
+		<!-- SETTINGS-->
+		<div class="settings" id="settings-menu" aria-hidden="true">
+			<div class="container inline">
+				<button
+					class="settings-button"
+					id="settings-close-button"
+					aria-label="Close settings"
+				>
+					<img
+						width="28px"
+						height="28px"
+						class="settings-icon"
+						src="../icons/back.svg"
+						alt="Back"
+					/>
+				</button>
+				<div class="header">Settings</div>
+			</div>
+			<div class="container wide">
+				<label for="token" class="header">Token</label>
+				<input
+					class="text-field token-input"
+					type="password"
+					id="token"
+					autocomplete="off"
+				/>
+				<div class="show-password-container">
+					<input
+						class="show-password-checkbox"
+						type="checkbox"
+						id="show-password"
+					/>
+					<span class="password-checkbox-hint">Show Token?</span>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="main.js"></script>
+	</body>
 </html>

@@ -6,23 +6,23 @@ const OPENROUTER = 'openrouter';
 
 export class Providers {
     static isGemini(provider) {
-        return format(provider) === GEMINI;
+        return this.format(provider) === GEMINI;
     }
 
     static isChatGPT(provider) {
-        return format(provider) === CHATGPT;
+        return this.format(provider) === CHATGPT;
     }
 
     static isHuggingFace(provider) {
-        return format(provider) === HUGGINGFACE;
+        return this.format(provider) === HUGGINGFACE;
     }
 
     static isClaude(provider) {
-        return format(provider) === CLAUDE;
+        return this.format(provider) === CLAUDE;
     }
 
     static isOpenRouter(provider) {
-        return format(provider) === OPENROUTER;
+        return this.format(provider) === OPENROUTER;
     }
 
     static getValues() {
@@ -30,7 +30,7 @@ export class Providers {
     }
 
     static isValidProvider(provider) {
-        return format(provider) in this.getValues();
+        return this.getValues().includes(this.format(provider));
     }
 
     static format(provider) {

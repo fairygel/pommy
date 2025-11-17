@@ -19,16 +19,15 @@ body {
 
 .header {
 	font-family: "Brush Script MT", cursive;
+	font-size: 20px;
 	padding: 0 12px;
 	margin-bottom: 2px;
 }
 
 .container {
-	margin: 12px;
 	box-sizing: border-box;
 	color: #fefffe;
 	display: flex;
-	flex-direction: column;
 }
 
 .show-password-container {
@@ -44,11 +43,27 @@ body {
 }
 
 .wide {
+	flex-direction: column;
 	flex: 0 1;
+	padding: 12px;
+}
+
+.inline {
+	padding: 4px 12px;
+	flex: 0 1;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: #fefffe 2px solid;
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .full-size {
+	padding: 12px;
 	flex: 1 1;
+	flex-direction: column;
 }
 
 .token-input {
@@ -72,4 +87,46 @@ body {
 	border: 2px solid #fefffe;
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 6px;
+}
+
+.settings-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 0;
+}
+
+.settings-button:hover .settings-icon {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
+}
+
+.settings-icon {
+	display: block;
+}
+
+#settings-menu {
+	position: fixed;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	background: linear-gradient(45deg, #a5a299 10%, #8d818c 100%);
+	padding: 0;
+	color: #fefffe;
+	z-index: 10;
+}
+
+#settings-menu.show {
+	display: flex;
+}
+
+.token-input {
+	flex: 0 0 auto;
+	width: 100%;
+	min-height: auto;
 }
