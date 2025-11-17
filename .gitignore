@@ -1,1 +1,5 @@
 .prettierrc
+.history
+.pyignore
+packager.py
+package.zip

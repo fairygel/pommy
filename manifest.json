@@ -13,7 +13,7 @@
         "<all_urls>"
       ],
       "js": [
-        "main.js"
+        "src/handler/content_handler.js"
       ]
     }
   ],
@@ -21,7 +21,7 @@
   "action": {
     "default_icon": "icons/ico.svg",
     "default_title": "pommy",
-    "default_popup": "popup/index.html"
+    "default_popup": "src/index.html"
   },
 
   "permissions": ["activeTab"],
